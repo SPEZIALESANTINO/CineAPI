@@ -1,0 +1,11 @@
+CREATE DATABASE cine;
+
+USE cine;
+
+CREATE TABLE tickets (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pelicula VARCHAR(255) NOT NULL,
+    asiento VARCHAR(10) NOT NULL,
+    horario DATETIME NOT NULL,
+    comprado BOOLEAN DEFAULT FALSE
+);
